@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学IT - 后台管理系统</title>
+    <?php include( './views/common/style.html' ) ?>
+</head>
+<body>
+    <!-- 登录 -->
+    <div class="login">
+        <div class="login-wrap">
+            <div class="avatar">
+                <img src="./uploads/monkey.png" class="img-circle" alt="">
+            </div>
+            <form id="formId" class="col-md-offset-1 col-md-10">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input  name="tc_name" type="text" class="form-control" placeholder="用户名">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input name="tc_pass" type="password" class="form-control" placeholder="密码">
+                </div>
+                <input type="submit" class="btn btn-lg btn-primary btn-block" value="登录">
+            </form>
+        </div>
+    </div>
+    
+    <?php include( './views/common/script.html' ) ?>
+     <script>
+        // $('#formId').on('submit',function(){
+        //     var formData=$(this).serialize();
+        //     $.ajax({
+        //         url:'/api/login',
+        //         data:formData,
+        //         type:"post",
+        //         success:function(info){
+        //             console.log(info);
+        //               if ( info.code == 200 ) {
+        //                 alert( '登录成功' );
+
+        //                 // 保存数据到 cookie 中
+        //                 $.cookie( 'userInfo', JSON.stringify( info.result ), { path: '/' } );
+
+
+        //                 location.pathname = '/';
+        //             }
+        //         }
+        //     });
+        //     return false;
+        // });
+     require(['login']);
+        
+    </script>
+</body>
+
+</html>

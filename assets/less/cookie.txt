@@ -1,0 +1,41 @@
+cookie的使用
+   ->cookie 就是浏览器存储数据的方式
+     如果我们要使用，我们要学习如何设置值（存储），和如何取值
+     ->如何的一切以cookie的数据
+      document.cookie
+      该数据时有一个字符串（是有个由分号和空格 隔开）
+      ->如何设置值
+      document.cookie='itcast=itheima';
+      document.cookie='web=bxg';
+      一旦给cookie复制，那么在浏览器关闭之前，都会存储数据
+      ->还可以设置多个数据
+      ->cookie 可以使得多个页面共享数据
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
